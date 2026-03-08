@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Smart Public Complaint Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-bridge"></i>
+                <span>Smart Public Complaint Management System</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="status.html">Track Complaint</a>
+                <span class="admin-badge"><i class="fas fa-shield-alt"></i> Admin</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-dashboard">
+        <div class="dashboard-header">
+            <h1>Administrator Dashboard</h1>
+            <div class="admin-actions">
+                <button class="btn-secondary" onclick="exportData()"><i class="fas fa-download"></i> Export Report</button>
+                <button class="btn-primary" onclick="loadAdminDashboard()"><i class="fas fa-sync-alt"></i> Refresh</button>
+            </div>
+        </div>
+
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-file-alt"></i>
+                <div class="stat-details">
+                    <span class="stat-value" id="totalComplaints">0</span>
+                    <span class="stat-label">Total Complaints</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-check-circle"></i>
+                <div class="stat-details">
+                    <span class="stat-value" id="resolvedComplaints">0</span>
+                    <span class="stat-label">Resolved</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-hourglass-half"></i>
+                <div class="stat-details">
+                    <span class="stat-value" id="pendingComplaints">0</span>
+                    <span class="stat-label">Pending</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="stat-details">
+                    <span class="stat-value" id="escalatedComplaints">0</span>
+                    <span class="stat-label">Escalated</span>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="complaints-table-container">
+            <table class="complaints-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Citizen</th>
+                        <th>Category</th>
+                        <th>Age (days)</th>
+                        <th>Urgency</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="complaintsTableBody">
+                   
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="escalation-zone">
+            <h3><i class="fas fa-exclamation-triangle"></i> Auto-Escalation Zone (Pending >20 days)</h3>
+            <div id="escalatedList" class="escalated-list">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

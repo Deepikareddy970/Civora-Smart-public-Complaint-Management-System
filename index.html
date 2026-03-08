@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civora–Smart Citizen Complaint Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-bridge"></i>
+                <span>Smart Public Complaint Management System</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="status.html">Track Complaint</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="btn-register">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bridge Between Citizens & Administration</h1>
+            <p>Report civic issues instantly. Track resolution in real-time. Escalate automatically if not resolved within 20 days.</p>
+            <div class="hero-buttons">
+                <a href="complaint-form.html" class="btn-primary"><i class="fas fa-plus-circle"></i> Register Complaint</a>
+                <a href="status.html" class="btn-secondary"><i class="fas fa-search"></i> Check Status</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <i class="fas fa-check-circle"></i>
+                <div class="stat-number" id="resolvedCount">1,247</div>
+                <div>Complaints Resolved</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <div class="stat-number" id="pendingCount">342</div>
+                <div>Pending</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div class="stat-number" id="citizenCount">5,832</div>
+                <div>Active Citizens</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="features">
+        <h2>How Smart Public Complaint Management System Works</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-camera"></i>
+                <h3>Location-Aware Reporting</h3>
+                <p>Open camera to automatically tag your exact location when reporting an issue.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Real-Time Tracking</h3>
+                <p>Track your complaint status from submission to resolution with live updates.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Auto-Escalation</h3>
+                <p>Complaints pending >10 days get reminders, >20 days auto-escalate to higher authorities.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Admin Dashboard</h3>
+                <p>Authorities get comprehensive analytics and management tools.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="steps">
+        <h2>Simple 4-Step Process</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <i class="fas fa-user-plus"></i>
+                <h4>Register/Login</h4>
+                <p>Create your citizen account</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <i class="fas fa-camera-retro"></i>
+                <h4>Report with Location</h4>
+                <p>Open camera to tag exact spot</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <i class="fas fa-search"></i>
+                <h4>Track Progress</h4>
+                <p>Monitor resolution status</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <i class="fas fa-check-double"></i>
+                <h4>Auto-Escalate</h4>
+                <p>Unresolved? Goes to higher authority</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-bridge"></i>
+                    <span>Smart Public Complaint Management System</span>
+                </div>
+                <p>Connecting citizens with administration for faster civic resolution.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="complaint-form.html">File Complaint</a>
+                <a href="status.html">Track Status</a>
+                <a href="admin.html">Admin Portal</a>
+            </div>
+           
+        </div>
+       
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
